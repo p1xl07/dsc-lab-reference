@@ -15,7 +15,7 @@ A practical collection of short Jupyter notebooks for university data science pr
 Upload the contents of this folder to a GitHub repository. On a lab computer, run:
 
 ```bash
-pip install git+https://github.com/p1xl07/dsc-lab-reference.git
+pip install git+https://github.com/YOUR-USERNAME/dsc-lab-reference.git
 ```
 
 Copy all notebooks into the current directory:
