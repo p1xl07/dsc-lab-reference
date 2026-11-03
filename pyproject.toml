@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsc-lab-reference"
+version = "2.0.0"
+description = "Jupyter quick-reference notebooks for university data science labs"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.6",
+    "seaborn>=0.12"
+]
+
+[project.scripts]
+dsc-lab-notebooks = "dsc_lab_reference.cli:main"
+
+[tool.setuptools]
+packages = ["dsc_lab_reference"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+dsc_lab_reference = ["notebooks/*.ipynb"]
